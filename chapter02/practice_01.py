@@ -1,3 +1,5 @@
+#1부터 n까지의 합을 재귀로 구현
+
 def sumByRecursion(n):
     if n < 1:
         return n
