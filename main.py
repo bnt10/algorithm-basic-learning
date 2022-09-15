@@ -1,6 +1,8 @@
 from flask import Flask
-from chapter02 import ch02_recursion
+from chapter02 import ch02_recursion, practice_01
+
 app = Flask('app')
+
 
 @app.route('/')
 def home():
@@ -12,6 +14,12 @@ def home():
 def recursion():
     ch02_recursion.recursion(3)
     return 'recursion'
+
+
+@app.route('/sum-by-recursion')
+def practice():
+    print(practice_01.sumByRecursion(3))
+    return 'practive01'
 
 
 if __name__ == '__main__':
