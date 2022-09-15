@@ -1,5 +1,6 @@
 #피보나치 수열을 재귀 방식으로 구현
 
+
 def fibonacci(n):
     if n <= 1:
         return n
@@ -8,4 +9,4 @@ def fibonacci(n):
     return n
 
 
-print(fibonacci(6))
+print(fibonacci(7))
