@@ -1,26 +1,14 @@
-#하노이의 탑 구현
+def hanoi(n, a, b):
+    if n > 1:
+        hanoi(n - 1, a, 6 - a - b)  # 기둥이 1개 이상이면 그룹으로 묶인 n-1개 원판을
+        # 중간으로 먼저 다 옮긴다
+    print(a, b)
+
+    if n > 1:
+        hanoi(n - 1, 6 - a - b, b)
 
 
-def hanoi(frm, to, n, count):
+n = int(input())
 
-    if n == 1:
-        print(f'{frm} {to} ')
-        return 1
-    else:
-        empty = 6 - frm - to
-        count += hanoi(frm, empty, n - 1, count)
-        print(f'{frm} {to}')
-        count += hanoi(empty, to, n - 1, count)
-
-    return count
-
-
-print('원반의 개수: ')
-numberOfDisk = int(input())
-print('원반들의 시작 위치: ')
-startLocation = int(input())
-print('옮겨야 할 위치: ')
-desLocation = int(input())
-print('\n')
-totalCount = hanoi(startLocation, desLocation, numberOfDisk, 0)
-print(f'총 이동 횟수: {totalCount}')
+print(2**n - 1)  #총 이동해야 하는 횟수
+hanoi(n, 1, 3)
