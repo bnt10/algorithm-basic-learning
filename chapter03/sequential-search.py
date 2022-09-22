@@ -6,7 +6,7 @@ def sequentialSearch(numberList, targetValue):
     # 입력: numberList:숫자 리스트, targetValue: 찾는값
 
     # 출력: numberList에서  targetValue 의 index
-ㄴ
+
     for index in range(0, len(numberList)):  #전체 리스트를 순차적으로 비교
         if targetValue == numberList[index]:
 
