@@ -24,12 +24,13 @@ def selectionSort(numList):
 
         #currentIndex를 기준으로 전체 list를 비교하여 가장 작은 값의 index를 구한다.
         for compareIndex in range(currentIndex + 1, n):
-            if numList[compareIndex] < numList[currentIndex]:
+            if numList[compareIndex] < numList[changeIndex]:
                 changeIndex = compareIndex
 
         sortingIndex(numList, currentIndex, changeIndex)
+        #print(numList)
 
 
-numList = [1, 5, 3, 9, 7]
+numList = [4, 9, 2, 1, 3]
 selectionSort(numList)
 print(numList)
