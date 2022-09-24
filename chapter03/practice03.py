@@ -31,6 +31,5 @@ def selectionSort(numList):
 
 
 numList = [1, 5, 3, 9, 7]
-
 selectionSort(numList)
 print(numList)
