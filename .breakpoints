@@ -1,17 +1,11 @@
 {
   "files": {
-    "chapter03/practice03.py": [
+    "chapter04/stack.py": [
       {
-        "id": "bc7ffd03-822b-41a9-b32a-e63338f27c65",
-        "line": 36,
-        "version": 1834,
-        "index": 643
-      },
-      {
-        "id": "b6b04ee6-e074-482a-b70a-097058e6143f",
-        "line": 36,
-        "version": 1834,
-        "index": 643
+        "id": "8fc58731-e73f-48b5-affd-8cdb20f9939b",
+        "line": 29,
+        "version": 540,
+        "index": 509
       }
     ]
   }
