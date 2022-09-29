@@ -4,60 +4,56 @@
 class adjacencyMatrix:
 
     def __init__(self):
-        self.__MAX_VTXS = 256
-        self.__size = 0
-        self.__vertices = []
-        self.__adjMatrix = []
-        self.reset()
+        self.MAX_VTXS = 256
+        self.size = 0
+        self.vertices = []
+        self.adjMatrix = []
 
-    @property
-    def vertex(self, i):
-        return self.vertices[i]
+    def getVertex(self, i):
+        return self.__vertices[i]
 
-    @property
-    def edge(self, m, n):
-        return self.__adjMatrix[m][n]
-
-    @edge.setter
-    def edge(self, m, n, value):
-        self.__adjMatrix[m][n] = value
-
-    @vertex.setter
-    def vertex(self, node):
-        if self.__size > self.__MAX_VTXS:
+    def setVertex(self, node):
+        if self.size > self.MAX_VTXS:
             return
-        self.__size = self.__size + 1
-        self.__vertex[self.__size] = node
+        print(self.size)
+        self.vertices.append(node)
+        self.size = self.size + 1
 
+    def getEdge(self, m, n):
+        return self.adjMatrix[m][n]
+
+    def setEdge(self, m, n, value):
+        self.adjMatrix.append([m,n])
+        print(self.adjMatrix)
     def reset(self):
-        for m in range(self.__MAX_VTXS):
-            for n in range(self.__MAX_VTXS):
+        for m in range(self.MAX_VTXS):
+            for n in range(self.MAX_VTXS):
                 print(m, n)
-                self.edge = (0, 0, 0)
-        self.__size = 0
+                self.setEdge = (m, n, 0)
+        self.size = 0
 
     def insertUndirectedEdge(self, m, n):
-        self.edge = (m, n, 1)
-        self.edge = (n, m, 1)
+        self.setEdge(m, n, 1)
+        self.setEdge(n, m, 1)
 
     def calculate(self):
-        print('vertex szie', self.__size)
-        print('------')
-        for i in self.__size:
-            print(self.vertex(i))
+        print('vertex szie', self.size)
+        # print('------')
+        # for i in self.size:
+        #     print(self.getVertex(i))
 
-        for i in self.__size:
-            print(self.vertex(i), ': ')
-            for j in self.__size:
-                print(self.edge(i, j), ': ')
+        # for i in self.size:
+        #     print(self.getVertex(i), ': ')
+        #     for j in self.size:
+        #         print(self.getVertex(i, j), ': ')
 
 
 #정점 삽입 (A, B, C, D)
 graph = adjacencyMatrix()
-graph.vertex = 'A' // 0
-graph.vertex = 'B' // 0
-graph.vertex = 'C' // 0
-graph.vertex = 'D' // 0
+graph.setVertex('A')
+graph.setVertex('B')
+graph.setVertex('C')
+graph.setVertex('D')
 
 graph.insertUndirectedEdge(0, 1)
 graph.insertUndirectedEdge(0, 2)
