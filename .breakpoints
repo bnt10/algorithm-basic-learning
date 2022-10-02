@@ -1,11 +1,11 @@
 {
   "files": {
-    "chapter04/stack.py": [
+    "chapter04/graph_adj_list.py": [
       {
-        "id": "8fc58731-e73f-48b5-affd-8cdb20f9939b",
-        "line": 29,
-        "version": 540,
-        "index": 509
+        "id": "4f366eca-6504-4d20-bde5-bf79c622c26d",
+        "line": 17,
+        "version": 100,
+        "index": 143
       }
     ]
   }

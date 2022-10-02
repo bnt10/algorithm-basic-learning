@@ -32,7 +32,7 @@ then :
 """
 
 
-class adjacencyMatrix:
+class AdjacencyMatrix:
 
     def __init__(self):
         self.MAX_VTXS = 256
@@ -69,7 +69,7 @@ class adjacencyMatrix:
         self.setEdge(m, n, 1)
         self.setEdge(n, m, 1)
 
-    def calculate(self):
+    def drawGraph(self):
         print('    ', end=' ')
         for i in range(self.size):
             print(self.getVertex(i), end=' ')
@@ -83,7 +83,7 @@ class adjacencyMatrix:
 
 
 #정점 삽입 (A, B, C, D)
-graph = adjacencyMatrix()
+graph = AdjacencyMatrix()
 graph.setVertex('A')
 graph.setVertex('B')
 graph.setVertex('C')
@@ -94,4 +94,4 @@ graph.insertUndirectedEdge(0, 2)
 graph.insertUndirectedEdge(0, 3)
 graph.insertUndirectedEdge(2, 3)
 
-graph.calculate()
+graph.drawGraph()
