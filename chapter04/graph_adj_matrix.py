@@ -11,7 +11,7 @@ when :
   graph.setVertex('B')
   graph.setVertex('C')
   graph.setVertex('D')
-  
+    
   graph.insertUndirectedEdge(0, 1)
   graph.insertUndirectedEdge(0, 2)
   graph.insertUndirectedEdge(0, 3)

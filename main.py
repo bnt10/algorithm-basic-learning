@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask('app')
 #from chapter03 import practice03
-#from chapter04 import graph_adj_list
+from chapter04 import graph_dfs
 
 
 @app.route('/')

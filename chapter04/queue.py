@@ -24,13 +24,12 @@ def checkPalindromeWithQueue(sentence):
 
     for s in reversed(sentence):
         reversedQueue.append(s.lower())
-
+    
     while queue:
         if queue.pop(0) != reversedQueue.pop(0):
             return False
 
     return True
-
 
 noPalindromeSentence = '기찻길'
 yesPalindromeSentence = '역삼역'
