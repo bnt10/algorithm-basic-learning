@@ -1,3 +1,18 @@
 {
-  "files": {}
+  "files": {
+    "chapter03/merge_sort.py": [
+      {
+        "id": "742d67b5-fb37-411a-8c44-f6f87dd39bad",
+        "line": 15,
+        "version": 278,
+        "index": 294
+      },
+      {
+        "id": "699469f1-c359-455d-820e-e1141dd7212d",
+        "line": 17,
+        "version": 278,
+        "index": 327
+      }
+    ]
+  }
 }

@@ -1,3 +1,6 @@
+sublist = [1, 2, 3, 7, 11, 33, 55, 22, 44, 13]
+
+
 def mergeSort(list):
     breakPoint = len(list) <= 1
     if breakPoint: return list
@@ -26,9 +29,5 @@ def merge(leftList, rightList):
     return merged
 
 
-totalNum = int(input())
-numList = [int(input()) for i in range(totalNum)]
-
-sorted = mergeSort(numList)
-for i in sorted:
-    print(i)
+sorted = mergeSort(sublist)
+print(sorted)
