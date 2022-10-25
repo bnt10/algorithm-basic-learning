@@ -8,6 +8,8 @@ def wordSort():
 
     wordList = list(word)
     wordList.sort()  # Sort alphabetically
+    print(wordList)['a', 'b', 'c', 'b']
+
     wordList.sort(key=lambda x: len(x))  # Sort by character length
 
     print('\n'.join(wordList))
